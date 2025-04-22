@@ -16,10 +16,12 @@ namespace Crud
 
         public db()
         {
+            //Connection to Database
             string cons = "server = 'localhost'; userid = 'root'; password = ''; database = 'dbcrud'; ";
             con = new MySqlConnection(cons);
         }
 
+        //INSERT METHOD
         public static void Insert()
         {
             con.Open();
